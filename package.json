@@ -1,44 +1,45 @@
 {
-  "name": "tiny-cli-args-parser",
-  "version": "1.0.0",
-  "description": "Tiny CLI arguments parser",
-  "keywords": [
-    "CLI",
-    "parser"
-  ],
-  "homepage": "https://github.com/ifeanyiecheruo/tiny-cli-args-parser#readme",
-  "bugs": {
-    "url": "https://github.com/ifeanyiecheruo/tiny-cli-args-parser/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ifeanyiecheruo/tiny-cli-args-parser.git"
-  },
-  "license": "MIT",
-  "author": "Ifeanyi Echeruo <ifeanyi.echeruo@outlook.com>",
-  "type": "module",
-  "main": "dist/main.mjs",
-  "types": "dist/main.d.mts",
-  "files": [
-    "dist/**/*"
-  ],
-  "scripts": {
-    "preinstall": "git config --local core.hooksPath tools/git/hooks",
-    "build": "tsc",
-    "watch": "tsc --watch",
-    "format": "npx biome format --write src/",
-    "check-format": "npx biome check src/",
-    "test": "node --test --experimental-test-coverage",
-    "watch-test": "node --watch --test --experimental-test-coverage",
-    "git-pre-commit": "npx biome format --staged --write ./src/",
-    "git-pre-push": "npx biome check --staged --apply src/",
-    "ci-check": "npm run check-format",
-    "ci-build": "npm run build",
-    "ci-test": "node --test --experimental-test-coverage --test-reporter junit --test-reporter-destination ./out/test.junit.xml --test-reporter lcov --test-reporter-destination ./out/test.lcov"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.2.3",
-    "@types/node": "^24.3.1",
-    "typescript": "^5.9.2"
-  }
+    "name": "tiny-cli-args-parser",
+    "version": "1.0.0",
+    "description": "Tiny CLI arguments parser",
+    "keywords": [
+        "CLI",
+        "parser"
+    ],
+    "homepage": "https://github.com/ifeanyiecheruo/tiny-cli-args-parser#readme",
+    "bugs": {
+        "url": "https://github.com/ifeanyiecheruo/tiny-cli-args-parser/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ifeanyiecheruo/tiny-cli-args-parser.git"
+    },
+    "license": "MIT",
+    "author": "Ifeanyi Echeruo <ifeanyi.echeruo@outlook.com>",
+    "type": "module",
+    "main": "dist/main.mjs",
+    "types": "dist/main.d.mts",
+    "files": [
+        "dist/**/*"
+    ],
+    "scripts": {
+        "preinstall": "git config --local core.hooksPath tools/git/hooks",
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "fix": "npx biome check --no-errors-on-unmatched --fix src/",
+        "check": "npx biome check --no-errors-on-unmatched src/",
+        "test": "node --test --experimental-test-coverage",
+        "watch-test": "node --watch --test --experimental-test-coverage",
+        "git-pre-commit": "npx biome check --no-errors-on-unmatched --fix --staged src/",
+        "git-pre-push": "npx biome check --no-errors-on-unmatched --changed src/",
+        "ci": "npm run ci-check && npm run ci-build && npm run ci-test",
+        "ci-check": "npm run check",
+        "ci-build": "npm run build",
+        "ci-test": "node --test --experimental-test-coverage --test-reporter junit --test-reporter-destination ./out/test.junit.xml --test-reporter lcov --test-reporter-destination ./out/test.lcov"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.3",
+        "@types/node": "^24.3.1",
+        "typescript": "^5.9.2"
+    }
 }
