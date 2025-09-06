@@ -2,6 +2,9 @@
 
 This is my CLI parser. There are many like it, but this one is mine.
 
+## Build status
+[![CI](https://github.com/ifeanyiecheruo/tiny-cli-args-parser/actions/workflows/ci.yaml/badge.svg)](https://github.com/ifeanyiecheruo/tiny-cli-args-parser/actions/workflows/ci.yaml)
+
 ## Motivation
 
 I just want a single file with a bit of procedural code to structure my CLI args in throw-away scripts, I don't need all of the fanciness of the more popular libraries.
