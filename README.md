@@ -1,16 +1,16 @@
-# Tiny Comman Line Arguments Parser
+# Tiny Command Line Arguments Parser
 
 This is my CLI parser. There are many like it, but this one is mine.
 
 ## Motivation
 
-I just want a tiny, single file, bit of procedural code to structure my CLI args for throw away scripts, I don't need all of the fanciness of the more popular libraries.
+I just want a single file with a bit of procedural code to structure my CLI args in throw-away scripts, I don't need all of the fanciness of the more popular libraries.
 
 ## Limitations
 
-- Does not support short arguments (eg -h)
-- Does not support sub command style args parsing. (eg command --verbose subcommand --out result.txt)
-- Does not do custom arg validation or argument coercing.
+- Does not support short arguments (e.g. -h)
+- Does not support sub command style args parsing. (e.g. `command --verbose subcommand --out result.txt`)
+- Does not do custom arg validation or argument coercion.
 - Does not generate help text.
 
 ## Usage

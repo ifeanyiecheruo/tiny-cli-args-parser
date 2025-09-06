@@ -27,7 +27,7 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "format": "npx biome format --write src/",
-    "check-format": "npx biome check --apply src/",
+    "check-format": "npx biome check src/",
     "test": "node --test --experimental-test-coverage",
     "watch-test": "node --watch --test --experimental-test-coverage",
     "git-pre-commit": "npx biome format --staged --write ./src/",
