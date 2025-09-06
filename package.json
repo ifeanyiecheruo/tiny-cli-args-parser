@@ -1,0 +1,35 @@
+{
+  "name": "tiny-cli-args-parser",
+  "version": "1.0.0",
+  "description": "Tiny CLI arguments parser",
+  "keywords": [
+    "CLI",
+    "parser"
+  ],
+  "homepage": "https://github.com/ifeanyiecheruo/tiny-cli-args-parser#readme",
+  "bugs": {
+    "url": "https://github.com/ifeanyiecheruo/tiny-cli-args-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifeanyiecheruo/tiny-cli-args-parser.git"
+  },
+  "license": "MIT",
+  "author": "Ifeanyi Echeruo <ifeanyi.echeruo@outlook.com>",
+  "type": "module",
+  "main": "dist/main.mjs",
+  "types": "dist/main.d.mts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "node --test --experimental-test-coverage",
+    "watch-test": "node --watch --test --experimental-test-coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "typescript": "^5.9.2"
+  }
+}
