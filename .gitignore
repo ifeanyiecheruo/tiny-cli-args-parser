@@ -1,16 +1,18 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-
 # testing
-/coverage
+/out/*
+!/out/dont-delete.txt
+
 
 # production
-/dist
+/dist/
+
+# dependencies
+node_modules/
 
 # misc
-.DS_Store
+.DS_Store/
 *.pem
 
 # debug
@@ -23,3 +25,4 @@ npm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
