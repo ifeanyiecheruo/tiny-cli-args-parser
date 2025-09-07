@@ -35,7 +35,7 @@
         "ci": "npm run ci-check && npm run ci-build && npm run ci-test",
         "ci-check": "npm run check",
         "ci-build": "npm run build",
-        "ci-test": "npm run test -- --test-reporter ./tools/html-test-summary.mts --test-reporter-destination ./out/test-report.html --test-reporter spec --test-reporter-destination stdout"
+        "ci-test": "npm run test -- --test-reporter ./tools/html-test-summary.mts --test-reporter-destination ./out/test-report.md --test-reporter spec --test-reporter-destination stdout"
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.3",
