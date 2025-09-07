@@ -16,6 +16,10 @@ I just want a single file with a bit of procedural code to structure my CLI args
 - Does not do custom arg validation or argument coercion.
 - Does not generate help text.
 
+## Contributing
+
+[CONTRIBUTING.md](./CONTRIBUTING.md)
+
 ## Usage
 
 ```typescript
