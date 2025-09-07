@@ -29,5 +29,5 @@ jobs:
         - name: Run tests
           run: |
             npm run ci-test
-            cat ./out/test-report.html >> "${GITHUB_STEP_SUMMARY}"
+            cat ./out/test-report.md >> "${GITHUB_STEP_SUMMARY}"
           
